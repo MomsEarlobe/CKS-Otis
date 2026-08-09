@@ -205,7 +205,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize map centered on Watertown, SD
-            var map = L.map('service-map').setView([44.90, -97.11], 8);
+            var map = L.map('service-map').setView([44.30, -97.00], 7);
             
             // Add OpenStreetMap tiles
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -220,7 +220,7 @@
                 fillColor: '#80C29F',
                 fillOpacity: 0.35,
                 weight: 2,
-                radius: 120000 // 120km radius approx covering the screenshot area
+                radius: 165000 // 120km radius approx covering the screenshot area
             }).addTo(map);
         });
     </script>
