@@ -290,10 +290,11 @@ small { font-size: 0.875rem; }
   margin-bottom: 1rem;
 }
 
-.hero .subheading {
+.hero .subheading,
+.hero .hero-subtitle {
   font-size: 1.25rem;
   font-weight: 500;
-  color: var(--color-light-gray);
+  color: var(--color-primary);
   margin-bottom: 1.5rem;
 }
 
@@ -722,9 +723,10 @@ small { font-size: 0.875rem; }
   color: var(--color-white);
 }
 
-.page-hero .subheading {
+.page-hero .subheading,
+.page-hero .hero-subtitle {
   font-size: 1.15rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-primary);
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
