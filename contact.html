@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Commercial Kitchen Services (CKS) for equipment repair and maintenance. Proudly serving the Watertown and Brookings, SD area.">
+    <title>Contact Us — Commercial Kitchen Services | CKS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+</head>
+<body>
+    <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logos/cks-logo-main.jpg" alt="CKS Logo">
+      </a>
+      
+      <button class="mobile-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule Service</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="https://book.housecallpro.com/book/Commercial-Kitchen-Services-LLC/f39445179ee74306a348c25e87e86e0f" target="_blank" class="btn btn-primary" style="color: white; padding: 0.4rem 1rem; margin-left: 1rem;">Book Online</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <main class="page-content">
+        <section class="page-hero contact-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-center">
+                <h1 class="hero-title">Contact Us</h1>
+                <p class="hero-subtitle">We're here to help keep your kitchen running</p>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding">
+            <div class="container grid-2-col align-start gap-lg">
+                <div class="contact-form-col">
+                    <h2 class="section-title text-left h3 mb-4">Send Us a Message</h2>
+                    <form action="#" class="modern-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required class="form-control" placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required class="form-control" placeholder="(555) 555-5555">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <div class="select-wrapper">
+                                <select id="service" name="service" class="form-control">
+                                    <option value="">Select a service...</option>
+                                    <option value="Oven/Range Repair">Oven/Range Repair</option>
+                                    <option value="Fryer Repair">Fryer Repair</option>
+                                    <option value="Ice Machine Service">Ice Machine Service</option>
+                                    <option value="Refrigeration">Refrigeration</option>
+                                    <option value="HVAC">HVAC</option>
+                                    <option value="Preventive Maintenance">Preventive Maintenance</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="form-control" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 btn-lg">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-col">
+                    <div class="card premium-card mb-4">
+                        <h2 class="card-title h4 text-center">Get In Touch</h2>
+                        <div class="card-body">
+                            <ul class="contact-list">
+                                <li>
+                                    <span class="icon">📞</span>
+                                    <div class="content">
+                                        <strong>Phone:</strong><br>
+                                        <a href="tel:6058802809" class="text-primary font-medium">(605) 880-2809</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="icon">✉️</span>
+                                    <div class="content">
+                                        <strong>Email:</strong><br>
+                                        <a href="mailto:Otis.CKS@gmail.com" class="text-primary font-medium">Otis.CKS@gmail.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="icon">📍</span>
+                                    <div class="content">
+                                        <strong>Service Area:</strong><br>
+                                        NE South Dakota (Watertown/Brookings area)
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <hr class="spacer-sm">
+                            
+                            <h3 class="h5 mb-3 text-center">Hours of Operation</h3>
+                            <table class="hours-table">
+                                <tr>
+                                    <td>Mon - Fri</td>
+                                    <td class="text-right">8:00 AM - 5:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sat - Sun</td>
+                                    <td class="text-right">Closed</td>
+                                </tr>
+                            </table>
+                            
+                            <hr class="spacer-sm">
+                            
+                            <a href="https://www.facebook.com/CKSofWatertown" target="_blank" class="btn btn-outline w-100">
+                                Follow us on Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div id="service-map" style="height: 450px; width: 100%; z-index: 1;"></div>
+        </section>
+    </main>
+
+    
+    
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="assets/logos/cks-logo-main.jpg" alt="CKS Logo">
+          </div>
+          <p><strong>Commercial Kitchen Services, LLC</strong><br>"We keep you cooking!"</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:605-880-2809">(605) 880-2809</a></li>
+            <li><a href="mailto:Otis.CKS@gmail.com">Otis.CKS@gmail.com</a></li>
+            <li>Serving NE South Dakota</li>
+            <li><a href="https://www.facebook.com/CKSofWatertown/reviews" target="_blank">Read Our Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Mon - Fri: 8AM - 5PM<br>Sat - Sun: Closed</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Commercial Kitchen Services, LLC. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/CKSofWatertown" target="_blank" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04c-5.5 0-10 4.48-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.54-4.5-10.02-10-10.02z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize map centered on Watertown, SD
+            var map = L.map('service-map').setView([44.90, -97.11], 8);
+            
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            
+            // Draw a circle representing the service radius (e.g. roughly 100 miles)
+            // 100 miles is roughly 160,000 meters
+            var circle = L.circle([44.90, -97.11], {
+                color: '#6EB7D8',
+                fillColor: '#80C29F',
+                fillOpacity: 0.35,
+                weight: 2,
+                radius: 120000 // 120km radius approx covering the screenshot area
+            }).addTo(map);
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

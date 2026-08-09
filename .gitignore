@@ -1,0 +1,20 @@
+# Google Drive metadata
+desktop.ini
+*.gdoc
+*.gsheet
+*.gslides
+*.gdraw
+
+# OS files
+Thumbs.db
+.DS_Store
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Node (if we add build tools later)
+node_modules/
+dist/
