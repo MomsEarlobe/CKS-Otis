@@ -690,7 +690,7 @@ small { font-size: 0.875rem; }
    INNER PAGES STYLES
    ========================================================================== */
 .page-hero {
-  min-height: 25vh;
+  min-height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -701,14 +701,6 @@ small { font-size: 0.875rem; }
   background-position: center;
   color: var(--color-white);
   text-align: center;
-}
-
-.page-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(26,26,26,0.6);
-  z-index: 1;
 }
 
 .page-hero .hero-content {
