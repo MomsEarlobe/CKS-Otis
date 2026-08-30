@@ -38,7 +38,7 @@
   </nav>
 
     <main class="page-content">
-        <section class="page-hero" style="background-image: linear-gradient(rgba(26, 26, 26, 0.65), rgba(26, 26, 26, 0.65)), url('assets/Pictures/Condenser%20Repair/Condenser%20Finished.jpg'); background-size: cover; background-position: center;">
+        <section class="page-hero" style="background-image: linear-gradient(rgba(26, 26, 26, 0.65), rgba(26, 26, 26, 0.65)), url('assets/Pictures/Condenser%20Repair/Condenser%20Finished.jpg'); background-size: cover; background-position: left 15%;">
             <div class="hero-content text-center">
                 <h1 class="hero-title">Contact Us</h1>
                 <p class="hero-subtitle">We're here to help keep your kitchen running</p>
@@ -49,23 +49,29 @@
             <div class="container grid-2-col align-start gap-lg">
                 <div class="contact-form-col">
                     <h2 class="section-title text-left h3 mb-4">Send Us a Message</h2>
-                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="modern-form">
+                    <div data-fs-success class="alert alert-success" style="display: none; background: #80C29F; color: white; padding: 1rem; border-radius: 4px; margin-bottom: 1rem;">Thanks for reaching out! We will get back to you shortly.</div>
+                    <div data-fs-error class="alert alert-danger" style="display: none; background: #e74c3c; color: white; padding: 1rem; border-radius: 4px; margin-bottom: 1rem;">Oops! There was a problem submitting your form.</div>
+                    
+                    <form id="contact-form" action="https://formspree.io/f/moeqjveb" method="POST" class="modern-form">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required class="form-control" placeholder="Your Name">
+                            <input type="text" id="name" name="name" required class="form-control" placeholder="Your Name" data-fs-field>
+                            <span data-fs-error="name" style="color: #e74c3c; font-size: 0.85rem; margin-top: 4px; display: block;"></span>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required class="form-control" placeholder="your.email@example.com">
+                            <input type="email" id="email" name="email" required class="form-control" placeholder="your.email@example.com" data-fs-field>
+                            <span data-fs-error="email" style="color: #e74c3c; font-size: 0.85rem; margin-top: 4px; display: block;"></span>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" required class="form-control" placeholder="(555) 555-5555">
+                            <input type="tel" id="phone" name="phone" required class="form-control" placeholder="(555) 555-5555" data-fs-field>
+                            <span data-fs-error="phone" style="color: #e74c3c; font-size: 0.85rem; margin-top: 4px; display: block;"></span>
                         </div>
                         <div class="form-group">
                             <label for="service">Service Needed</label>
                             <div class="select-wrapper">
-                                <select id="service" name="service" class="form-control">
+                                <select id="service" name="service" class="form-control" data-fs-field>
                                     <option value="">Select a service...</option>
                                     <option value="Oven/Range Repair">Oven/Range Repair</option>
                                     <option value="Fryer Repair">Fryer Repair</option>
@@ -76,12 +82,14 @@
                                     <option value="Other">Other</option>
                                 </select>
                             </div>
+                            <span data-fs-error="service" style="color: #e74c3c; font-size: 0.85rem; margin-top: 4px; display: block;"></span>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required class="form-control" placeholder="How can we help you?"></textarea>
+                            <textarea id="message" name="message" rows="5" required class="form-control" placeholder="How can we help you?" data-fs-field></textarea>
+                            <span data-fs-error="message" style="color: #e74c3c; font-size: 0.85rem; margin-top: 4px; display: block;"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100 btn-lg">Send Message</button>
+                        <button type="submit" class="btn btn-primary w-100 btn-lg" data-fs-submit-btn>Send Message</button>
                     </form>
                 </div>
                 
@@ -234,5 +242,11 @@
         });
     </script>
     <script src="js/main.js"></script>
+    <!-- Formspree AJAX SDK -->
+    <script>
+      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', { formElement: '#contact-form', formId: 'moeqjveb' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
